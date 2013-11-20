@@ -88,24 +88,6 @@ RapidRails::Application.configure do
   }
 =end
 
-# Paperclip S3
-=begin
-  config.paperclip_defaults = {
-    :storage => :s3,
-    :s3_credentials => {
-      :bucket => ENV['AWS_BUCKET'],
-      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
-    }
-  }
-=end
-
-# Stripe
-=begin
-  config.stripe.api_key = ENV['SECRET_KEY']
-  config.stripe.publishable_key = ENV['PUBLISHABLE_KEY']
-=end
-
 #Cloudfront
 # Enable serving of images, stylesheets, and JavaScripts from an asset server.
 #config.action_controller.asset_host = "http://asset_host_url.cloudfront.net"
