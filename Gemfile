@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'unicorn'
 gem 'newrelic_rpm'
 gem 'devise'
+gem 'turbolinks'
 
 # Attachments
 #gem "paperclip", "~> 3.0"
