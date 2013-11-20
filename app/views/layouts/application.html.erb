@@ -7,10 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-
-<%= yield %>
-
+<%= nav_bar({fixed:"top",inverse:true, responsive:true, brand: "RapidRails", brand_link: root_path}) do %>
+    <%= menu_text "Serious Prototyping" %>
+    <%= menu_item "Home", root_path %>
+<% end %>
+<%= bootstrap_flash %>
+<div class="container">
+	<%= yield %>
+</div>
 </body>
 </html>
