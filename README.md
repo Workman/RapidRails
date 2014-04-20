@@ -7,7 +7,7 @@ Want to get started immediately?
 
 Run the following command in terminal with your project name to get up and running:
 
-     ruby -e "$(curl https://gist.github.com/Workman/7554012/raw/)" project_name
+     ruby -e "$(curl -L https://gist.github.com/Workman/7554012/raw/)" project_name
 
 This will clone the repository to a local directory, project_name. If you have the heroku toolchain installed, it can also setup the app ready to deploy to a setup heroku instance.
 
