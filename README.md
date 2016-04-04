@@ -3,7 +3,7 @@ RapidRails
 
 Rapid Rails is a quick-start prototyping framework with customizations, quick start examples, and configurations to launch a web service quickly on a hosting provider like Heroku. It includes common gems and configurations to spend less time on initial configuration.
 
-Currently, you can go from zero-to-live in about 120 seconds with the bootstrap and deployment command in the `Get Started` section.
+Currently, **you can go from zero-to-live in about 120 seconds** with the bootstrap and deployment command in the `Get Started` section.
 
 Get Started
 -----------
