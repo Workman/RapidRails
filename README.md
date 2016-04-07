@@ -1,5 +1,5 @@
-RapidRails
-==========
+Rapid Rails
+===========
 
 Rapid Rails is a quick-start prototyping framework with customizations, quick start examples, and configurations to launch a web service quickly on a hosting provider like Heroku. It includes common gems and configurations to spend less time on initial configuration.
 
@@ -18,3 +18,55 @@ This will clone the repository to a local directory, project_name. If you have t
      
      # To Add origin (useful if you want to use a repository host)
      git remote add origin <Github/BitBucket URL>
+
+Guides
+------
+Included are some quick start guides and sample code to quickly define common business objectives like background jobs, sending emails, 3rdparty integrations, and reporting. 
+
+Each guide is a 5 minute read or less and many include references to working sample code to kick start your project. 
+
+h3. Getting Started
+* [Getting Started on Rapid Rails](#)
+* [Hackathon Best Practices](#)
+
+h3. Collaboration
+* [Working with a Team](#)
+
+h3. Development
+* [Development Environment setup](#) - Working locally. Foreman, .ENV
+* [Authentication](#)
+* [Database Prototyping](#)
+* [Developing API Endpoints](#)
+* [Testing](#)
+* [Routing](#)
+* [Webhooks](#) - Generic Webhook endpoint 
+
+h3. Integrations
+* [Custom Integrations](#) - Rolling your own REST or SOAP integrations
+* [Accepting Payments](#) - Stripe
+* [Making Phone Calls](#) - Twillo
+* [OAuth](#) - Sign in with Google, Twitter, Facebook, Tumblr, Salesforce, Github, Dropbox, Yahoo, OpenId
+* [Sending Text Messages](#) - Twillo
+* [Send an Email](#) - Sendgrid
+* [Uploading Files](#) - AWS S3
+
+h3. Design
+* [Applying Themes](#)
+* [Icons and Assets](#)
+
+h3. Infrastructure
+* [Background Jobs](#) - Heroku
+* [Technology Flowchart](#) - What technologies to use and when
+
+h3. Security
+* [Security in Rapid Rails](#)
+
+h3. Deployment
+* [Domains](#) - $ Name
+* [Deploying Code](#) - Heroku
+* [Enabling SSL](#) - $ Heroku
+* [Monitoring Logs](#) - Heroku
+* [Scaling Dynos](#) - Heroku
+
+h3. Monitoring
+* [Service Monitoring](#) - New Relic
