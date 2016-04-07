@@ -25,14 +25,14 @@ Included are some quick start guides and sample code to quickly define common bu
 
 Each guide is a 5 minute read or less and many include references to working sample code to kick start your project. 
 
-h3. Getting Started
+### Getting Started
 * [Getting Started on Rapid Rails](#)
 * [Hackathon Best Practices](#)
 
-h3. Collaboration
+### Collaboration
 * [Working with a Team](#)
 
-h3. Development
+### Development
 * [Development Environment setup](#) - Working locally. Foreman, .ENV
 * [Authentication](#)
 * [Database Prototyping](#)
@@ -41,7 +41,7 @@ h3. Development
 * [Routing](#)
 * [Webhooks](#) - Generic Webhook endpoint 
 
-h3. Integrations
+### Integrations
 * [Custom Integrations](#) - Rolling your own REST or SOAP integrations
 * [Accepting Payments](#) - Stripe
 * [Making Phone Calls](#) - Twillo
@@ -50,23 +50,23 @@ h3. Integrations
 * [Send an Email](#) - Sendgrid
 * [Uploading Files](#) - AWS S3
 
-h3. Design
+### Design
 * [Applying Themes](#)
 * [Icons and Assets](#)
 
-h3. Infrastructure
+### Infrastructure
 * [Background Jobs](#) - Heroku
 * [Technology Flowchart](#) - What technologies to use and when
 
-h3. Security
+### Security
 * [Security in Rapid Rails](#)
 
-h3. Deployment
+### Deployment
 * [Domains](#) - $ Name
 * [Deploying Code](#) - Heroku
 * [Enabling SSL](#) - $ Heroku
 * [Monitoring Logs](#) - Heroku
 * [Scaling Dynos](#) - Heroku
 
-h3. Monitoring
+### Monitoring
 * [Service Monitoring](#) - New Relic
