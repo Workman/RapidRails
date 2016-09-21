@@ -13,8 +13,35 @@ Run the following command in terminal with your project name to get up and runni
 
 This will clone the repository to a local directory, project_name. If you have the heroku toolchain installed, it can also setup the app ready to deploy to a setup heroku instance.
 
+To complete setup locally, you may need to install [rvm](https://rvm.io/rvm/install) and run the following commands:
+
+     rvm install ruby-2.2.2
+     bundle install
+     foreman start &
+     # Open at http://localhost:5000/
+
+When you're ready to deploy
+
      # To Deploy
      git push heroku master
      
      # To Add origin (useful if you want to use a repository host)
      git remote add origin <Github/BitBucket URL>
+
+
+Common Tasks
+------------
+
+## Deployment tasks
+
+### Deploy to Heroku (Maintainence mode and deploy)
+`rake deploy:prod`
+
+### Associating a domain to the heroku instance
+`heroku domains:add rapidexample.com`
+
+## Development commands
+
+### Generate a new Rake task
+`rails g task namespace task_name`
+

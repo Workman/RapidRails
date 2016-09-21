@@ -1,9 +1,9 @@
 #source 'https://code.stripe.com'
 source 'https://rubygems.org'
 
-ruby '2.2.0'
+ruby '2.2.2'
 
-gem 'rails', '4.2.1'
+gem 'rails', '4.2.7'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
@@ -32,6 +32,8 @@ group :development do
 	gem 'sqlite3'
 	gem 'better_errors'
 	gem 'dotenv-rails'
+	gem 'letter_opener' # Preview sent email in app
+	gem 'foreman' # Procfile runner
 end
 
 group :development, :test do
