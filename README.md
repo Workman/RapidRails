@@ -17,7 +17,7 @@ To complete setup locally, you may need to install [rvm](https://rvm.io/rvm/inst
 
      rvm install ruby-2.2.2
      bundle install
-     foreman start &
+     heroku local
      # Open at http://localhost:5000/
 
 When you're ready to deploy

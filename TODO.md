@@ -8,6 +8,5 @@ Bugs
 
 Improvements
 ------------
-* Add Foreman for dev use
 * Add more bootstrap content so to speed up prototyping concept
 * Prettyify flash messages (Use bootstrap to show off flash messages)
