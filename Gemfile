@@ -1,9 +1,9 @@
 #source 'https://code.stripe.com'
 source 'https://rubygems.org'
 
-ruby '2.2.2'
+ruby '2.6.5'
 
-gem 'rails', '>=5.2'
+gem 'rails', '>=6.0'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
@@ -30,6 +30,7 @@ end
 
 ###################
 group :development do
+  gem 'listen'
 	gem 'sqlite3'
 	gem 'better_errors'
 	gem 'dotenv-rails'
