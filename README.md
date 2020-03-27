@@ -15,12 +15,12 @@ This will clone the repository to a local directory, project_name. If you have t
 
 To complete setup locally, you may need to install [rvm](https://rvm.io/rvm/install) and run the following commands:
 
-     rvm install ruby-2.2.2
+     rvm install ruby-2.6.5
      bundle install
      heroku local
      # Open at http://localhost:5000/
 
-When you're ready to deploy
+When you're ready to **deploy**
 
      # To Deploy
      git push heroku master
@@ -28,6 +28,17 @@ When you're ready to deploy
      # To Add origin (useful if you want to use a repository host)
      git remote add origin <Github/BitBucket URL>
 
+If you need a **background worker**
+
+    # Pay for a worker dyno
+    heroku ps:scale worker=1    
+
+When you're ready to be legit and **run production loads**
+
+    # Upgrade your dynos to a paid plan
+    heroku ps:scale web=2
+    # Enable Preboot
+    heroku features:enable preboot
 
 Common Tasks
 ------------
