@@ -13,6 +13,7 @@ gem 'puma'
 gem 'newrelic_rpm'
 gem 'devise'
 gem 'turbolinks'
+gem 'sidekiq'
 
 # Attachments
 #gem "paperclip", "~> 3.0"
