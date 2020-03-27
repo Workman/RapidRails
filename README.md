@@ -13,11 +13,18 @@ Run the following command in terminal with your project name to get up and runni
 
 This will clone the repository to a local directory, project_name. If you have the heroku toolchain installed, it can also setup the app ready to deploy to a setup heroku instance.
 
-To complete setup locally, you may need to install [rvm](https://rvm.io/rvm/install) and run the following commands:
+To complete setup locally, you may need to install [rvm](https://rvm.io/rvm/install), update Bundler, and run the following commands:
 
      rvm install ruby-2.6.5
+     
+     # Update to Bundler2 
+     gem update --system
+     gem install bundler
+     
+     # Setup
      bundle install
      heroku local
+     
      # Open at http://localhost:5000/
 
 When you're ready to **deploy**
@@ -31,7 +38,7 @@ When you're ready to **deploy**
 If you need a **background worker**
 
     # Pay for a worker dyno
-    heroku ps:scale worker=1    
+    heroku ps:scale worker=1
 
 When you're ready to be legit and **run production loads**
 
