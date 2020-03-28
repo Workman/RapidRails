@@ -11,3 +11,11 @@
  *= require_self
  *= require_tree .
  */
+
+
+/* 
+ * https://github.com/twbs/bootstrap-rubygem
+ * Custom bootstrap variables must be set or imported *before* bootstrap.
+ */
+@import "bootstrap";
+@import "font_awesome5_webfont"

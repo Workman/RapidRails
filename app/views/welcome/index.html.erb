@@ -1,227 +1,56 @@
-<div class="col-sm-9">
-	<h1>Welcome to Rapid Rails</h1>
-
-	<p>This is the default page</p>
-	
-	<h2>Built on Bootstrap 3</h2>
-	<p>
-		<a href="http://getbootstrap.com/components/">Please visit GetBootstrap.com for updated documentation.</a>
-	</p>
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Rapid on Rails</h1>
+  <p class="lead">Hackathon speed, built to scale</p>
+  <p>
+    <%=link_to(raw("#{fa_icon('book')} Read the guide"), rapidonrails_root_path, class:"btn btn-primary my-2")%>
+    <%=raw(link_to(raw("#{fa_icon('github', type: :fab)} View on Github"), "https://github.com/Workman/rapidrails", class:"btn btn-secondary my-2"))%>
+  </p>
 </div>
-<div class="col-sm-3">
-	<h2>Labels</h2>
-	<p>
-		<%= label('Success', :success) %><br>
-		<%= label('Warning', :warning) %><br>
-		<%= label('Danger', :danger) %><br>
-		<%= label('Info', :info) %><br>
-		<%= label('Primary', :primary) %><br>
-		<%= label('Default', :default) %><br>
 
-		<%= badge(42, :warning) %> 
-		
-	</p>
-	<h2>Glyphs</h2>
-	<p>
-		<%= glyph(:adjust) %>
-		<%= glyph(:"align-center") %>
-		<%= glyph(:"align-justify") %>
-		<%= glyph(:"align-left") %>
-		<%= glyph(:"align-right") %>
-		<%= glyph(:"arrow-down") %>
-		<%= glyph(:"arrow-left") %>
-		<%= glyph(:"arrow-right") %>
-		<%= glyph(:"arrow-up") %>
-		<%= glyph(:asterisk) %>
-		<%= glyph(:backward) %>
-		<%= glyph(:"ban-circle") %>
-		<%= glyph(:barcode) %>
-		<%= glyph(:bell) %>
-		<%= glyph(:bold) %>
-		<%= glyph(:book) %>
-		<%= glyph(:bookmark) %>
-		<%= glyph(:briefcase) %>
-		<%= glyph(:bullhorn) %>
-		<%= glyph(:calendar) %>
-		<%= glyph(:camera) %>
-		<%= glyph(:certificate) %>
-		<%= glyph(:check) %>
-		<%= glyph(:"chevron-down") %>
-		<%= glyph(:"chevron-left") %>
-		<%= glyph(:"chevron-right") %>
-		<%= glyph(:"chevron-up") %>
-		<%= glyph(:"circle-arrow-down") %>
-		<%= glyph(:"circle-arrow-left") %>
-		<%= glyph(:"circle-arrow-right") %>
-		<%= glyph(:"circle-arrow-up") %>
-		<%= glyph(:cloud) %>
-		<%= glyph(:"cloud-download") %>
-		<%= glyph(:"cloud-upload") %>
-		<%= glyph(:cog) %>
-		<%= glyph(:"collapse-down") %>
-		<%= glyph(:"collapse-up") %>
-		<%= glyph(:comment) %>
-		<%= glyph(:compressed) %>
-		<%= glyph(:"copyright-mark") %>
-		<%= glyph(:"credit-card") %>
-		<%= glyph(:cutlery) %>
-		<%= glyph(:dashboard) %>
-		<%= glyph(:download) %>
-		<%= glyph(:"download-alt") %>
-		<%= glyph(:earphone) %>
-		<%= glyph(:edit) %>
-		<%= glyph(:eject) %>
-		<%= glyph(:envelope) %>
-		<%= glyph(:euro) %>
-		<%= glyph(:"exclamation-sign") %>
-		<%= glyph(:expand) %>
-		<%= glyph(:export) %>
-		<%= glyph(:"eye-close") %>
-		<%= glyph(:"eye-open") %>
-		<%= glyph(:"facetime-video") %>
-		<%= glyph(:"fast-backward") %>
-		<%= glyph(:"fast-forward") %>
-		<%= glyph(:file) %>
-		<%= glyph(:film) %>
-		<%= glyph(:filter) %>
-		<%= glyph(:fire) %>
-		<%= glyph(:flag) %>
-		<%= glyph(:flash) %>
-		<%= glyph(:"floppy-disk") %>
-		<%= glyph(:"floppy-open") %>
-		<%= glyph(:"floppy-remove") %>
-		<%= glyph(:"floppy-save") %>
-		<%= glyph(:"floppy-saved") %>
-		<%= glyph(:"folder-close") %>
-		<%= glyph(:"folder-open") %>
-		<%= glyph(:font) %>
-		<%= glyph(:forward) %>
-		<%= glyph(:fullscreen) %>
-		<%= glyph(:gbp) %>
-		<%= glyph(:gift) %>
-		<%= glyph(:glass) %>
-		<%= glyph(:globe) %>
-		<%= glyph(:"hand-down") %>
-		<%= glyph(:"hand-left") %>
-		<%= glyph(:"hand-right") %>
-		<%= glyph(:"hand-up") %>
-		<%= glyph(:"hd-video") %>
-		<%= glyph(:hdd) %>
-		<%= glyph(:header) %>
-		<%= glyph(:headphones) %>
-		<%= glyph(:heart) %>
-		<%= glyph(:"heart-empty") %>
-		<%= glyph(:home) %>
-		<%= glyph(:import) %>
-		<%= glyph(:inbox) %>
-		<%= glyph(:"indent-left") %>
-		<%= glyph(:"indent-right") %>
-		<%= glyph(:"info-sign") %>
-		<%= glyph(:italic) %>
-		<%= glyph(:leaf) %>
-		<%= glyph(:link) %>
-		<%= glyph(:list) %>
-		<%= glyph(:"list-alt") %>
-		<%= glyph(:lock) %>
-		<%= glyph(:"log-in") %>
-		<%= glyph(:"log-out") %>
-		<%= glyph(:magnet) %>
-		<%= glyph(:"map-marker") %>
-		<%= glyph(:minus) %>
-		<%= glyph(:"minus-sign") %>
-		<%= glyph(:move) %>
-		<%= glyph(:music) %>
-		<%= glyph(:"new-window") %>
-		<%= glyph(:off) %>
-		<%= glyph(:ok) %>
-		<%= glyph(:"ok-circle") %>
-		<%= glyph(:"ok-sign") %>
-		<%= glyph(:open) %>
-		<%= glyph(:paperclip) %>
-		<%= glyph(:pause) %>
-		<%= glyph(:pencil) %>
-		<%= glyph(:phone) %>
-		<%= glyph(:"phone-alt") %>
-		<%= glyph(:picture) %>
-		<%= glyph(:plane) %>
-		<%= glyph(:play) %>
-		<%= glyph(:"play-circle") %>
-		<%= glyph(:plus) %>
-		<%= glyph(:"plus-sign") %>
-		<%= glyph(:print) %>
-		<%= glyph(:pushpin) %>
-		<%= glyph(:qrcode) %>
-		<%= glyph(:"question-sign") %>
-		<%= glyph(:random) %>
-		<%= glyph(:record) %>
-		<%= glyph(:refresh) %>
-		<%= glyph(:"registration-mark") %>
-		<%= glyph(:remove) %>
-		<%= glyph(:"remove-circle") %>
-		<%= glyph(:"remove-sign") %>
-		<%= glyph(:repeat) %>
-		<%= glyph(:"resize-full") %>
-		<%= glyph(:"resize-horizontal") %>
-		<%= glyph(:"resize-small") %>
-		<%= glyph(:"resize-vertical") %>
-		<%= glyph(:retweet) %>
-		<%= glyph(:road) %>
-		<%= glyph(:save) %>
-		<%= glyph(:saved) %>
-		<%= glyph(:screenshot) %>
-		<%= glyph(:"sd-video") %>
-		<%= glyph(:search) %>
-		<%= glyph(:send) %>
-		<%= glyph(:share) %>
-		<%= glyph(:"share-alt") %>
-		<%= glyph(:"shopping-cart") %>
-		<%= glyph(:signal) %>
-		<%= glyph(:sort) %>
-		<%= glyph(:"sort-by-alphabet") %>
-		<%= glyph(:"sort-by-alphabet-alt") %>
-		<%= glyph(:"sort-by-attributes") %>
-		<%= glyph(:"sort-by-attributes-alt") %>
-		<%= glyph(:"sort-by-order") %>
-		<%= glyph(:"sort-by-order-alt") %>
-		<%= glyph(:"sound-5-1") %>
-		<%= glyph(:"sound-6-1") %>
-		<%= glyph(:"sound-7-1") %>
-		<%= glyph(:"sound-dolby") %>
-		<%= glyph(:"sound-stereo") %>
-		<%= glyph(:star) %>
-		<%= glyph(:"star-empty") %>
-		<%= glyph(:"stats") %>
-		<%= glyph(:"step-backward") %>
-		<%= glyph(:"step-forward") %>
-		<%= glyph(:"stop") %>
-		<%= glyph(:"subtitles") %>
-		<%= glyph(:"tag") %>
-		<%= glyph(:"tags") %>
-		<%= glyph(:"tasks") %>
-		<%= glyph(:"text-height") %>
-		<%= glyph(:"text-width") %>
-		<%= glyph(:"th") %>
-		<%= glyph(:"th-large") %>
-		<%= glyph(:"th-list") %>
-		<%= glyph(:"thumbs-down") %>
-		<%= glyph(:"thumbs-up") %>
-		<%= glyph(:"time") %>
-		<%= glyph(:"tint") %>
-		<%= glyph(:"tower") %>
-		<%= glyph(:"transfer") %>
-		<%= glyph(:"trash") %>
-		<%= glyph(:"tree-conifer") %>
-		<%= glyph(:"tree-deciduous") %>
-		<%= glyph(:"unchecked") %>
-		<%= glyph(:"upload") %>
-		<%= glyph(:"usd") %>
-		<%= glyph(:"user") %>
-		<%= glyph(:"volume-down") %>
-		<%= glyph(:"volume-off") %>
-		<%= glyph(:"volume-up") %>
-		<%= glyph(:"warning-sign") %>
-		<%= glyph(:"wrench") %>
-		<%= glyph(:"zoom-in") %>
-		<%= glyph(:"zoom-out") %>
-	</p>
+<div class="card-deck mb-3 text-center">
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Free</h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>10 users included</li>
+        <li>2 GB of storage</li>
+        <li>Email support</li>
+        <li>Help center access</li>
+      </ul>
+      <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+    </div>
+  </div>
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Pro</h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>20 users included</li>
+        <li>10 GB of storage</li>
+        <li>Priority email support</li>
+        <li>Help center access</li>
+      </ul>
+      <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+    </div>
+  </div>
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Enterprise</h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>30 users included</li>
+        <li>15 GB of storage</li>
+        <li>Phone and email support</li>
+        <li>Help center access</li>
+      </ul>
+      <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+    </div>
+  </div>
 </div>

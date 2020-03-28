@@ -1,4 +1,3 @@
 class AuthenticatedController < ApplicationController
-	def index
-	end
+  before_action :authenticate!
 end
