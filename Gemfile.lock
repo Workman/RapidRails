@@ -61,7 +61,7 @@ GEM
     autoprefixer-rails (9.8.4)
       execjs
     bcrypt (3.1.13)
-    better_errors (2.7.1)
+    better_errors (2.8.0)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
@@ -87,7 +87,7 @@ GEM
     dotenv-rails (2.7.5)
       dotenv (= 2.7.5)
       railties (>= 3.2, < 6.1)
-    erubi (1.9.0)
+    erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.13.1)
     font_awesome5_rails (1.1.1)
